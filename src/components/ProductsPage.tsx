@@ -99,14 +99,14 @@ export function ProductsPage({ addToCart, searchQuery }: ProductsPageProps) {
                   placeholder="Mínimo"
                   value={minPrice}
                   onChange={(e) => setMinPrice(e.target.value)}
-                  className="w-full bg-gray-900 border border-cyan-500/30 rounded-md px-3 py-2 text-white"
+                  className="w-full bg-gray-900 border border-cyan-500/30 rounded-md px-4 py-2 text-white"
                 />
                 <input
                   type="number"
                   placeholder="Máximo"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(e.target.value)}
-                  className="w-full bg-gray-900 border border-cyan-500/30 rounded-md px-3 py-2 text-white"
+                  className="w-full bg-gray-900 border border-cyan-500/30 rounded-md px-4 py-2 text-white"
                 />
               </div>
             </div>
