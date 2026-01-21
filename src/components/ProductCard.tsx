@@ -12,12 +12,16 @@ export function ProductCard({ product, categoryName, onAddToCart }: ProductCardP
   return (
     <div className="border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20 transition-all duration-300 flex gap-6 bg-gray-800/50 backdrop-blur-sm group">
       {/* Product Image */}
-      <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-md overflow-hidden border border-purple-500/20">
-        <img
-          src={product.image_url}
-          alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-        />
+      <div className="w-48 h-48 flex-shrink-0 bg-gray-900 rounded-md overflow-hidden border border-purple-500/20 flex items-center justify-center">
+        {product.image_url ? (
+          <img
+            src={product.image_url}
+            alt={product.name}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          />
+        ) : (
+          <div className="text-white text-center p-4">{product.name}</div>
+        )}
       </div>
 
       {/* Product Info */}

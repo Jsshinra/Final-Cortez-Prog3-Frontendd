@@ -119,7 +119,7 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, onChe
           <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500 text-2xl">Carrito de Compras</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-cyan-400"
+            className="text-gray-200 hover:text-cyan-400"
           >
             <X size={24} />
           </button>
@@ -157,14 +157,14 @@ export function Cart({ isOpen, onClose, items, onUpdateQuantity, onRemove, onChe
                     <div className="flex items-center gap-3 border border-cyan-500/30 rounded-md">
                       <button
                         onClick={() => onUpdateQuantity(item.id_key, item.quantity - 1)}
-                        className="p-2 hover:bg-cyan-500/20"
+                        className="p-2 text-white hover:bg-cyan-500/20"
                       >
                         <Minus size={16} />
                       </button>
                       <span className="w-8 text-center text-white">{item.quantity}</span>
                       <button
                         onClick={() => onUpdateQuantity(item.id_key, item.quantity + 1)}
-                        className="p-2 hover:bg-cyan-500/20"
+                        className="p-2 text-white hover:bg-cyan-500/20"
                       >
                         <Plus size={16} />
                       </button>
