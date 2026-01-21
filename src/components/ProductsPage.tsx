@@ -112,7 +112,7 @@ export function ProductsPage({ addToCart, searchQuery }: ProductsPageProps) {
             </div>
             
             {/* Stock and Sort Filters */}
-            <div>
+            <div className="pb-8 border-b border-cyan-500/20">
               <h3 className="mb-3 text-green-400">Otros</h3>
               <div className="space-y-2">
                 <label className="flex items-center gap-2 cursor-pointer group">
